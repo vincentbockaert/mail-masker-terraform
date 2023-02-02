@@ -17,11 +17,12 @@ resource "cloudflare_record" "amazonses_dkim_record_techheresy" {
 }
 
 resource "cloudflare_record" "amazonses_mx_mailfrom_record_techheresy" {
-  zone_id = var.cloudflare_zone_id
-  name    = aws_ses_domain_mail_from.techheresy.mail_from_domain
-  type    = "MX"
-  ttl     = "600"
-  value   = "10 feedback-smtp.eu-central-1.amazonses.com"
+  zone_id  = var.cloudflare_zone_id
+  name     = aws_ses_domain_mail_from.techheresy.mail_from_domain
+  type     = "MX"
+  ttl      = "600"
+  priority = 10
+  value    = "feedback-smtp.eu-central-1.amazonses.com"
 }
 
 resource "cloudflare_record" "amazonses_txt_mailfrom_record_techheresy" {
