@@ -19,7 +19,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "mail-masker_bucket_lifecycle" 
 
     filter {}
 
-    status = Enabled
+    status = "Enabled"
 
   }
 }
