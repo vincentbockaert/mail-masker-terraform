@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-central-1" # Frankfurt
+  region = "eu-west-1" # Ireland
   # uses environment variables in Terraform Cloud
 }
 
