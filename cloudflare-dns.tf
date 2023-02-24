@@ -22,7 +22,7 @@ resource "cloudflare_record" "amazonses_mx_mailfrom_record_techheresy" {
   type     = "MX"
   ttl      = "600"
   priority = 10
-  value    = "feedback-smtp.eu-central-1.amazonses.com"
+  value    = "feedback-smtp.eu-west-1.amazonses.com"
 }
 
 resource "cloudflare_record" "amazonses_txt_mailfrom_record_techheresy" {
